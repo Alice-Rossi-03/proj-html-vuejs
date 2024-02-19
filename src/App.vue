@@ -15,6 +15,7 @@ import AppFooter from './components/3-footer/AppFooter.vue'
 <template>
   <header>
     <AppHeader/>
+
   </header>
 
   <main>
@@ -29,5 +30,8 @@ import AppFooter from './components/3-footer/AppFooter.vue'
 <style lang="scss">
 header{
   background-image: url('./assets/img/header-bg.png');
+  position: relative;
+
+  
 }
 </style>
