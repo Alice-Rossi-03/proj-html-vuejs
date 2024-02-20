@@ -4,6 +4,8 @@ import AppMainTwo from './AppMainTwo.vue';
 import AppMainThree from './AppMainThree.vue';
 import AppMainFour from './AppMainFour.vue';
 import AppMainFive from './AppMainFive.vue';
+import AppMainSix from './AppMainSix.vue';
+import AppMainSeven from './AppMainSeven.vue';
 
   export default{
     name: 'AppMain',
@@ -12,7 +14,9 @@ import AppMainFive from './AppMainFive.vue';
         AppMainTwo,
         AppMainThree,
         AppMainFour,
-        AppMainFive
+        AppMainFive,
+        AppMainSix, 
+        AppMainSeven
     }
   }
 </script>
@@ -23,6 +27,8 @@ import AppMainFive from './AppMainFive.vue';
   <AppMainThree/>
   <AppMainFour/>
   <AppMainFive/>
+  <AppMainSix/>
+  <AppMainSeven/>
 </template>
 
 <style lang="scss" scoped>
