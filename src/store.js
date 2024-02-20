@@ -79,5 +79,35 @@ export const store = reactive ({
             opponentOne: 'game-img-7.png' ,
             opponentTwo: 'game-img-8.png',
         }
+    ],
+    reviewsList:[
+        {
+            name: 'Emilia Ferrari',
+            rating: 9.7,
+            review: 'I absolutely love my Bose QuietComfort 35 II headphones! The noise cancellation is top-notch, allowing me to immerse myself in my music without any distractions. The sound quality is fantastic, with crisp highs and deep, rich bass. Definitely worth the investment',
+            country: 'Italy',
+            img: 'user-image-2.png'
+        },
+        {
+            name: 'James Smith',
+            rating: 7.3,
+            review: 'The Apple iPad Pro is a game-changer! The large 12.9-inch screen is stunning, perfect for watching movies, browsing the web, or getting work done.',
+            country: 'England',
+            img:'user-image-1.png'
+        },
+        {
+            name: 'Olivia Williams',
+            rating: 9.4,
+            review: 'I cant say enough good things about the Instant Pot Duo! It has completely revolutionized the way I cook. Its incredibly versatile, allowing me to sauté, steam, slow cook, and more, all in one pot. The pressure cooking feature saves me so much time, making delicious meals in a fraction of the time it would take on the stove.',
+            country: 'USA',
+            img:'user-image-4.png'
+        },
+        {
+            name: 'Benjamin Taylor',
+            rating: 8.8,
+            review: 'The Dyson V11 Torque Drive is hands down the best vacuum cleaner Ive ever owned! Its lightweight and easy to maneuver, making cleaning a breeze. While its a bit pricey, the performance and convenience it offers are well worth it!',
+            country: 'Australia',
+            img:'user-image-3.png'
+        },
     ]
 })
