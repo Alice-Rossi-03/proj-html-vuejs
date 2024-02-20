@@ -17,8 +17,6 @@ import {store} from '../../store.js';
 <template>
   <li>
     <figure>
-        <!-- <img :src='`../../assets/img/${propsItem.icon}`'  alt="propsItem.name"> -->
-        <!-- <img :src='`../../assets/img/${propsItem.icon}`'  alt="propsItem.name"> -->
         <i :class="propsItem.fa"></i>
     </figure>
 
