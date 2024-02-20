@@ -2,13 +2,15 @@
 import AppMainOne from './AppMainOne.vue';
 import AppMainTwo from './AppMainTwo.vue';
 import AppMainThree from './AppMainThree.vue';
+import AppMainFour from './AppMainFour.vue';
 
   export default{
     name: 'AppMain',
     components:{
         AppMainOne,
         AppMainTwo,
-        AppMainThree
+        AppMainThree,
+        AppMainFour
     }
   }
 </script>
@@ -17,6 +19,7 @@ import AppMainThree from './AppMainThree.vue';
   <AppMainOne/> 
   <AppMainTwo/>
   <AppMainThree/>
+  <AppMainFour/>
 </template>
 
 <style lang="scss" scoped>

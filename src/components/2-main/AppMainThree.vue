@@ -61,6 +61,7 @@
                 border: 1px solid $darker-blue; 
                 border-radius: 2em;
                 padding: 1em;
+                box-shadow: 0px 0px 7px 5px $darker-blue;
 
                 div{
                     color: $light-green;

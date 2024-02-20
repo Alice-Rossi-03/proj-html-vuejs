@@ -62,6 +62,8 @@ import {store} from '../../store';
     width: calc(50% - 1em);
     border: 2px solid $lighter-blue; 
     border-radius: 1em;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.83)
+;
 
     .top{
         background-color: $medium-blue;
