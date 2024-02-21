@@ -30,7 +30,6 @@ import {store} from '../../store';
   <div class="box">
     <div> 
         <div class="stars">
-            <!-- {{ propsItem.rating }} -->
             <i class="fa-solid fa-star" style="color: gold" v-for="(item) in ratingStars"></i>
             <i class="fa-solid fa-star" style="opacity: 0.50;" v-for="(item) in emptyStars"></i>
         </div>
@@ -58,7 +57,9 @@ import {store} from '../../store';
 @use '../../styles/partials/variables' as *; 
     .box{
         background-color: $lighter-blue;
-        width: calc(25% - 1em);
+        width: calc(100% / 3 - 1em);
+        flex-shrink: 0;
+        justify-content: center;
         padding: 1em;
         border-radius: 1em;
         margin-top: 3em;

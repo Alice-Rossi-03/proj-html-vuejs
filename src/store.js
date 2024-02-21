@@ -124,18 +124,25 @@ export const store = reactive ({
             img:'testimonials-image-1.png'
         },
         {
-            name: 'Yuki Tanaka',
-            rating: 9.8,
+            name: 'Benjamin Taylor',
+            rating: 8.8,
             review: 'The Dyson V11 Torque Drive is hands down the best vacuum cleaner Ive ever owned! Its lightweight and easy to maneuver, making cleaning a breeze. While its a bit pricey, the performance and convenience it offers are well worth it!',
-            country: 'Japan',
-            img:'testimonials-image-3.png'
+            country: 'Australia',
+            img:'user-image-3.png'
         },
         {
-            name: 'Rajesh Patel',
-            rating: 4.8,
+            name: 'Jean-Luc Dubois',
+            rating: 7.8,
             review: 'The Dyson V11 Torque Drive is hands down the best vacuum cleaner Ive ever owned! Its lightweight and easy to maneuver, making cleaning a breeze. While its a bit pricey, the performance and convenience it offers are well worth it!',
-            country: 'India',
-            img:'testimonials-image-2.png'
+            country: 'France',
+            img:'user-image-1.png'
+        },
+        {
+            name: 'Lars Olsen',
+            rating: 8.1,
+            review: 'The Dyson V11 Torque Drive is hands down the best vacuum cleaner Ive ever owned! Its lightweight and easy to maneuver, making cleaning a breeze. While its a bit pricey, the performance and convenience it offers are well worth it!',
+            country: 'Norway',
+            img:'testimonials-image-1.png'
         },
     ],
     articlesList:[

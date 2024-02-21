@@ -9,8 +9,28 @@ import {store} from '../../store';
     },
     data(){
         return{
-            store
+            store,
+            position: 0
         }
+    },
+    methods:{
+        autoScroll(){
+            console.log('helloWorld')
+            const slider = document.getElementById('carousel')
+            let amount = slider.offsetWidth/3
+            this.position++ 
+            if(this.position > 6){
+                this.position = 0
+                slider.scrollLeft = 0
+            }
+            slider.scrollBy({
+                left: amount,
+                behavior: 'smooth'
+            });
+        }
+    },
+    created(){
+        setInterval(this.autoScroll, 3000)
     }
   }
 </script>
@@ -24,7 +44,7 @@ import {store} from '../../store';
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio qui omnis nihil eaque quod nobis fugiat inventore assumenda facilis provident temporibus, aliquid eligendi fugit deleniti nisi ab perferendis doloremque.</p> 
         </div>
 
-        <div class="carousel-container">
+        <div id='carousel' class="carousel-container">
             <ReviewCard v-for="(item, index) in store.reviewsList" :key="index" :propsItem="item"/>
         </div>
     </div>
@@ -74,6 +94,11 @@ import {store} from '../../store';
             .carousel-container{
                 display: flex;
                 gap: 1em;
+                overflow-x: scroll;
+            }
+
+            .carousel-container::-webkit-scrollbar {
+                display: none;
             }
         }
     }

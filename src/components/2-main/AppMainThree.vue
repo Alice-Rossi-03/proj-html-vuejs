@@ -12,9 +12,9 @@
             return Math.floor(Math.random()*(max-min + 1) )
         }
     },
-    mounted(){
-        this.getRandomNumber(min,max)
-    }
+    // mounted(){
+    //     this.getRandomNumber(min,max)
+    // }
   }
 </script>
 
