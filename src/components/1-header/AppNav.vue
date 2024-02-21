@@ -85,7 +85,7 @@ import AppNavBar from './AppNavBar.vue'
         .notification{
             position: absolute; 
             top: 1.2em;
-            right: 24em; 
+            right: 24.7em; 
             color: $black; 
             font-size: 0.8em; 
             padding: 0.1em;

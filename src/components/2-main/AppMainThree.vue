@@ -1,6 +1,20 @@
 <script>
   export default{
-    name: 'AppMainThree'
+    name: 'AppMainThree',
+    data(){
+        return{
+            min: '', 
+            max:''
+        }
+    },
+    methods: {
+        getRandomNumber(min, max){
+            return Math.floor(Math.random()*(max-min + 1) )
+        }
+    },
+    mounted(){
+        this.getRandomNumber(min,max)
+    }
   }
 </script>
 
@@ -11,19 +25,19 @@
 
         <div class="box-container">
             <div class="box">
-                <h2>1135</h2>
+                <h2>{{getRandomNumber(1,5000)}}</h2>
                 <div>Twitch Streams</div>
             </div>
             <div class="box">
-                <h2>44</h2>
+                <h2>{{getRandomNumber(1,70)}}</h2>
                 <div>Total Games</div>
             </div>
             <div class="box">
-                <h2>982</h2>
+                <h2>{{getRandomNumber(1,100)}}</h2>
                 <div>Youtube Streams</div>
             </div>
             <div class="box">
-                <h2>40</h2>
+                <h2>{{getRandomNumber(1,200)}}</h2>
                 <div>Pro Team</div>
             </div>
 

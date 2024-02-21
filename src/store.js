@@ -151,5 +151,51 @@ export const store = reactive ({
             name: 'Benefits Of Gaming - PC And Video-games',
             img: 'blog-item-4.png'
         }
-    ]
+    ],
+    quickLinks:[
+        {
+            name: 'Games',
+        },
+        {
+            name: 'Latest Tournament',
+        },
+        {
+            name: 'Shop',
+        },
+        {
+            name: 'Blog',
+        },
+        {
+            name: 'Contact',
+        },
+    ],
+    helpList:[
+        {
+            name: 'Faqs',
+        },
+        {
+            name: 'Terms & Conditions',
+        },
+        {
+            name: 'Privacy',
+        },
+    ],
+    followList:[
+        {
+            name: 'Facebook',
+        },
+        {
+            name: 'Twitter',
+        },
+        {
+            name: 'Instagram',
+        },
+        {
+            name: 'YouTube',
+        },
+        {
+            name: 'GitHub',
+        },
+    ],
+    
 })

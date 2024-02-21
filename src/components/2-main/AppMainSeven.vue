@@ -59,7 +59,7 @@ import {store} from '../../store';
 
 .bg-black{
     background-color: $black;
-    padding-bottom: 4em; 
+    padding-bottom: 10em; 
 
     .container{
         width: 80%;

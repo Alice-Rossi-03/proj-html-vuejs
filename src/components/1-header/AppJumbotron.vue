@@ -117,7 +117,7 @@
             background-size: cover; 
             background-repeat: no-repeat; 
             background-position: center; 
-            width: 100em; 
+            width: 75em; 
             height: 32em; 
         }
     }
