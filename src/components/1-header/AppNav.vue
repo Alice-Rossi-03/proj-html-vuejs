@@ -92,19 +92,28 @@ import AppNavBar from './AppNavBar.vue'
             border-radius: 50%; 
             font-family: sans-serif; 
             background-color: $acquamarine; 
+            
         }
 
         .button-border{
             border-radius: 1.3em; 
             border: 1px solid $acquamarine; 
-
+            &:hover{
+                border: 1px dashed $yellowish;
+                cursor: pointer;
+            }
             button{
             background-color: $acquamarine; 
             border: 0; 
             padding: 0.7em; 
             text-transform: uppercase; 
             border-radius: 1.3em; 
-            margin: 0.3em
+            margin: 0.3em; 
+            &:hover{
+                background-color: $yellowish;
+                cursor: pointer;
+
+            }
         }
         }
 

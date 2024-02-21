@@ -9,11 +9,23 @@
 </script>
 
 <template>
-    <li>{{ propsItem.name }}</li>
+    <li :class="propsItem.active ? 'current' : '' " class="li" >{{ propsItem.name }}</li>
+    
 </template>
 
 <style lang="scss" scoped>
-    li{
+
+@use '../../styles/partials/variables' as *;
+    .li{
         list-style-type: none;
+
+        &:hover{
+            color: $light-green;
+            cursor: pointer;
+        }
+    }
+
+    .current{
+        color: $light-green;
     }
 </style>

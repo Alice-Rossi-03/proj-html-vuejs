@@ -202,6 +202,10 @@ import {store} from '../../store';
             color: $white;
             font-size: 1.5em;
             padding: 0.5em;
+
+            &:hover{
+              background-color: $light-green;
+            }
           }
         }
       }

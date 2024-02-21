@@ -27,10 +27,10 @@ import {store} from '../../store';
                 left: amount,
                 behavior: 'smooth'
             });
-        }
+        },
     },
     created(){
-        setInterval(this.autoScroll, 3000)
+        setInterval(this.autoScroll, 3000) 
     }
   }
 </script>
@@ -45,7 +45,7 @@ import {store} from '../../store';
         </div>
 
         <div id='carousel' class="carousel-container">
-            <ReviewCard v-for="(item, index) in store.reviewsList" :key="index" :propsItem="item"/>
+            <ReviewCard v-for="(item, index) in store.reviewsList" :key="index" :propsItem="item" @mouseover="stopScroll()" />
         </div>
     </div>
   </div>

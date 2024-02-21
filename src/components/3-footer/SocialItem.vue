@@ -21,14 +21,15 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-
+@use '../../styles/partials/variables' as *;
 li{
     opacity: 0.6;
     list-style-type: none;
     font-family: sans-serif;
 
-    a{
-        text-decoration: none;
+    &:hover{
+        color: $light-green;
+        cursor: pointer;
     }
 }
 </style>

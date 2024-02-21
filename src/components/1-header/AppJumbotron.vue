@@ -80,9 +80,18 @@
                 .button-border{
                     border-radius: 1.3em; 
                     border: 1px solid $acquamarine; 
+                    &:hover{
+                        border: 1px dashed $yellowish;
+                        cursor: pointer;
+                    }
 
                     .explore-button{
                             background-color: $acquamarine;
+                            &:hover{
+                            background-color: $yellowish;
+                            cursor: pointer;
+
+                            }
                         }
 
                     button{
@@ -98,6 +107,12 @@
                         }
                         i{
                             color: $acquamarine; 
+                            &:hover{
+                            color: $yellowish;
+                            cursor: pointer;
+
+                            }
+
                             }
                     }
                 }
