@@ -10,7 +10,7 @@ import {store} from '../../store';
         return{
             store,
             ratingStars: '',
-            emptyStars: '',
+            emptyStars: ''
         }
     },
     methods:{
