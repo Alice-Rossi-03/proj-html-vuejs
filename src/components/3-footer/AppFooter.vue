@@ -40,10 +40,18 @@ import {store} from '../../store';
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vel quisquam, perferendis incidunt porro voluptates voluptate eos magni quos. Architecto, voluptate. At iure possimus odit quidem error molestiae reprehenderit dolorum.</p>
         <div class="icons">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-twitch"></i>
-          <i class="fa-brands fa-facebook-f"></i>
+          <div class="icon-box">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="icon-box">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="icon-box">
+            <i class="fa-brands fa-twitch"></i>
+          </div>
+          <div class="icon-box">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
         </div>
       </div>
       <div class="lists">
@@ -196,17 +204,28 @@ import {store} from '../../store';
           gap: 1em; 
           align-items: center;
 
-          i{
+          .icon-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3em;
+            height: 3em;
             border: 1px solid $white;
-            border-radius: 0.5em;
-            color: $white;
-            font-size: 1.5em;
-            padding: 0.5em;
-
+            border-radius: 50%;
             &:hover{
               background-color: $light-green;
             }
+
+            i{
+            // border: 1px solid $white;
+            // border-radius: 0.5em;
+            color: $white;
+            font-size: 1.5em;
+            // padding: 0.5em;
           }
+          }
+
+          
         }
       }
 

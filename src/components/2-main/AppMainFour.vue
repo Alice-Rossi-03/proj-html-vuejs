@@ -25,10 +25,6 @@
 
         <div class="stream-screen">
 
-            <figure>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qcL3nk6sYv0?si=eF-AwY0_doKgFGgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </figure>
-
             <div class="pos-abs" :class="active ? 'd-none' : ''">
                 
                 <div class="live-container">
@@ -56,7 +52,12 @@
                     </div>
                 </div>
 
+
             </div>
+
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qcL3nk6sYv0?si=eF-AwY0_doKgFGgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </figure>
             
         </div>
     </div>
@@ -126,6 +127,9 @@
                     height:315px; 
                     border-radius: 1em;
                     background-size: cover;
+                    transition: display;
+                    transition-delay: 2s;
+                        
                     
 
                     .live-container{
@@ -155,6 +159,10 @@
                             width: fit-content;
                             border-radius: 1.3em; 
                             border: 1px solid $acquamarine; 
+                            &:hover{
+                                border: 1px dashed $yellowish;
+                                cursor: pointer;
+                            }
 
                             button{
                                 background-color: tra;
@@ -167,6 +175,10 @@
                                 i{
                                     color: $acquamarine; 
                                     font-size: 1.5em;
+                                    &:hover{
+                                        color: $yellowish;
+                                        cursor: pointer;
+                                    }
 
                                 }
                             }
@@ -214,7 +226,8 @@
                 }
 
                 .d-none{
-                    display: none;
+                    animation: fadeIn 2s forwards;
+                    
                 }
 
                 
@@ -225,4 +238,14 @@
 
     }
     
+    @keyframes fadeIn {
+    from {
+        opacity: 1;
+        display: block;
+    } to {
+        opacity: 0;
+        display: none;
+    }
+}
+
 </style>
